@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeTiles - Premium Tile Collection</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-th-large"></i>
+                <span>LuxeTiles</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link" id="360-viewer-btn">360° Viewer</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Tiles for Modern Living</h1>
+            <p class="hero-subtitle">Transform your space with our exquisite collection of ceramic, marble, and designer tiles</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-primary">Explore Collection</a>
+                <a href="#" class="btn btn-secondary" id="virtual-tour-btn">Virtual Tour</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Handpicked tiles from the finest manufacturers worldwide</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Visualization</h3>
+                    <p>See how tiles look in your space with our AR technology</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and secure delivery to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tile Categories</h2>
+                <p>Discover our extensive range of premium tiles</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="ceramic">
+                    <div class="category-image">
+                        <div class="category-overlay">
+                            <i class="fas fa-eye"></i>
+                            <span>View Collection</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Ceramic Tiles</h3>
+                        <p>Durable and versatile for any space</p>
+                        <span class="category-count">150+ designs</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="marble">
+                    <div class="category-image marble-bg">
+                        <div class="category-overlay">
+                            <i class="fas fa-eye"></i>
+                            <span>View Collection</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Marble Tiles</h3>
+                        <p>Luxurious natural stone elegance</p>
+                        <span class="category-count">80+ designs</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="vitrified">
+                    <div class="category-image vitrified-bg">
+                        <div class="category-overlay">
+                            <i class="fas fa-eye"></i>
+                            <span>View Collection</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Vitrified Tiles</h3>
+                        <p>High-strength porcelain perfection</p>
+                        <span class="category-count">120+ designs</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="mosaic">
+                    <div class="category-image mosaic-bg">
+                        <div class="category-overlay">
+                            <i class="fas fa-eye"></i>
+                            <span>View Collection</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Mosaic Tiles</h3>
+                        <p>Artistic patterns and textures</p>
+                        <span class="category-count">200+ designs</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="digital">
+                    <div class="category-image digital-bg">
+                        <div class="category-overlay">
+                            <i class="fas fa-eye"></i>
+                            <span>View Collection</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Digital Print</h3>
+                        <p>Modern digital artwork designs</p>
+                        <span class="category-count">300+ designs</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="outdoor">
+                    <div class="category-image outdoor-bg">
+                        <div class="category-overlay">
+                            <i class="fas fa-eye"></i>
+                            <span>View Collection</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Outdoor Tiles</h3>
+                        <p>Weather-resistant outdoor solutions</p>
+                        <span class="category-count">90+ designs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Our most popular and trending tiles</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="360° View"><i class="fas fa-sync-alt"></i></button>
+                            <button class="action-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn" title="Add to Favorites"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Carrara Marble Elite</h3>
+                        <p class="product-size">60x60 cm</p>
+                        <div class="product-price">$45.99/sq ft</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(124)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image ceramic-product">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="360° View"><i class="fas fa-sync-alt"></i></button>
+                            <button class="action-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn" title="Add to Favorites"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Urban Ceramic Pro</h3>
+                        <p class="product-size">30x60 cm</p>
+                        <div class="product-price">$28.99/sq ft</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image vitrified-product">
+                        <div class="product-actions">
+                            <button class="action-btn" title="360° View"><i class="fas fa-sync-alt"></i></button>
+                            <button class="action-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn" title="Add to Favorites"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Vitrified Supreme</h3>
+                        <p class="product-size">80x80 cm</p>
+                        <div class="product-price">$52.99/sq ft</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(156)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"Exceptional quality tiles and outstanding customer service. The 360° viewer helped us choose the perfect tiles for our home renovation."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Interior Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 360° Viewer Modal -->
+    <div class="modal" id="viewer-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="viewer-container">
+                <h3>360° Tile Viewer</h3>
+                <div class="tile-viewer">
+                    <div class="tile-3d" id="tile-3d">
+                        <div class="tile-face front"></div>
+                        <div class="tile-face back"></div>
+                        <div class="tile-face left"></div>
+                        <div class="tile-face right"></div>
+                        <div class="tile-face top"></div>
+                        <div class="tile-face bottom"></div>
+                    </div>
+                </div>
+                <div class="viewer-controls">
+                    <button class="viewer-btn" data-tile="marble">Marble</button>
+                    <button class="viewer-btn" data-tile="ceramic">Ceramic</button>
+                    <button class="viewer-btn" data-tile="mosaic">Mosaic</button>
+                    <button class="viewer-btn" data-tile="digital">Digital</button>
+                </div>
+                <p class="viewer-instruction">Drag to rotate • Scroll to zoom</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-th-large"></i>
+                        <span>LuxeTiles</span>
+                    </div>
+                    <p>Premium tiles for modern living spaces. Transform your home with our exquisite collection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Ceramic Tiles</a></li>
+                        <li><a href="#">Marble Tiles</a></li>
+                        <li><a href="#">Vitrified Tiles</a></li>
+                        <li><a href="#">Mosaic Tiles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tile Street, Design City, DC 12345</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@luxetiles.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxeTiles. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

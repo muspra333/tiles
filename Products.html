@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - LuxeTiles</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-th-large"></i>
+                <span>LuxeTiles</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link active">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link" id="360-viewer-btn">360° Viewer</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Explore our complete collection of premium tiles</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Filters Sidebar -->
+                <div class="filters-sidebar">
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <div class="filter-group">
+                            <label><input type="checkbox" data-filter="ceramic"> Ceramic</label>
+                            <label><input type="checkbox" data-filter="marble"> Marble</label>
+                            <label><input type="checkbox" data-filter="vitrified"> Vitrified</label>
+                            <label><input type="checkbox" data-filter="mosaic"> Mosaic</label>
+                            <label><input type="checkbox" data-filter="digital"> Digital Print</label>
+                            <label><input type="checkbox" data-filter="outdoor"> Outdoor</label>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <h3>Size</h3>
+                        <div class="filter-group">
+                            <label><input type="checkbox" data-size="30x30"> 30x30 cm</label>
+                            <label><input type="checkbox" data-size="30x60"> 30x60 cm</label>
+                            <label><input type="checkbox" data-size="60x60"> 60x60 cm</label>
+                            <label><input type="checkbox" data-size="80x80"> 80x80 cm</label>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" min="10" max="100" value="50" class="price-slider" id="priceRange">
+                            <div class="price-display">$10 - $<span id="priceValue">50</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-main">
+                    <div class="products-header">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search tiles..." id="searchInput">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="sort-options">
+                            <select id="sortSelect">
+                                <option value="popular">Most Popular</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be dynamically generated -->
+                    </div>
+
+                    <div class="pagination">
+                        <button class="page-btn" id="prevPage">Previous</button>
+                        <div class="page-numbers" id="pageNumbers"></div>
+                        <button class="page-btn" id="nextPage">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content quick-view">
+            <span class="close">&times;</span>
+            <div class="quick-view-content">
+                <div class="quick-view-image">
+                    <img id="quickViewImg" src="" alt="">
+                    <div class="image-gallery">
+                        <div class="thumbnail active"></div>
+                        <div class="thumbnail"></div>
+                        <div class="thumbnail"></div>
+                    </div>
+                </div>
+                <div class="quick-view-details">
+                    <h2 id="quickViewTitle"></h2>
+                    <div class="product-rating">
+                        <div class="stars"></div>
+                        <span class="rating-count"></span>
+                    </div>
+                    <div class="price" id="quickViewPrice"></div>
+                    <div class="product-info">
+                        <p><strong>Material:</strong> <span id="quickViewMaterial"></span></p>
+                        <p><strong>Size:</strong> <span id="quickViewSize"></span></p>
+                        <p><strong>Finish:</strong> <span id="quickViewFinish"></span></p>
+                        <p><strong>Application:</strong> <span id="quickViewApplication"></span></p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">360° View</button>
+                        <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                        <button class="btn-icon"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-th-large"></i>
+                        <span>LuxeTiles</span>
+                    </div>
+                    <p>Premium tiles for modern living spaces. Transform your home with our exquisite collection.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxeTiles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
